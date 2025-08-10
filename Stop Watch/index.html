@@ -3,10 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Stop Watch</title>
+    <style>
+        body
+        {
+            text-align: center;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        h3
+        {
+            font-weight: 900;
+            font-size: 4vw;
+        }
+        h2
+        {
+            font-size: 3vw;
+        }
+        button
+        {
+            padding: 1vw 2vw;
+            border-radius: 10px;
+            border:1px solid #dadada;
+            color: black;
+        }
+        button:hover
+        {
+            background-color: bisque;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    
+    <h3>Stop Watch</h3>
+    <h2 id="time">00:00</h2>
+    <button onclick="StartClock()">Start</button>
+    <button onclick="StopClock()">Stop</button>
+    <button onclick="ResetClock()">Reset</button>
     <script src="script.js"></script>
 </body>
 </html>

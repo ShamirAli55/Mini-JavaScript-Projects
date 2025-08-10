@@ -3,10 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TO DO LIST</title>
+    <style>
+                body
+        {
+            text-align: center;
+        }
+        h3
+        {
+            font-weight: 900;
+            font-size: 4vw;
+        }
+        input
+        {
+            padding:1vw 2vw;
+            border-radius: 10px;
+            border: 1px solid;
+            width: 30%;
+            outline: none;
+        }
+        button
+        {
+            padding: 1vw 2vw;
+            border-radius: 10px;
+            border:1px solid #dadada;
+            color: black;
+            cursor: pointer;
+            transition: all 0.1s ease-in-out;
+        }
+        button:hover
+        {
+            background-color: beige;
+            transform: scale(1.02);
+        }
+    </style>
 </head>
 <body>
-    
+    <h3>TO DO LIST</h3>
+    <input type="text"  placeholder="Enter an item ..." id="input_data">
+    <button onclick=AddItem()>Add Item</button>
+    <div id="items">
+
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

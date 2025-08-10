@@ -4,9 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color Flipper</title>
+    <style>
+        body
+        {
+            text-align: center;
+        }
+        h3
+        {
+            font-weight: 900;
+            font-size: 4vw;
+        }
+        button
+        {
+            padding: 1vw 2vw;
+            border-radius: 10px;
+            border: 1px solid #000;
+            color:white;
+        }
+        button:nth-child(2)
+        {
+            background-color: green;
+        }
+        button:nth-child(3)
+        {
+            background-color: royalblue;
+        }
+        button:nth-child(4)
+        {
+            background-color: red;
+        }
+        #random
+        {
+            color: black;
+        }
+    </style>
 </head>
 <body>
-    
+    <h3>Color Flipper</h3>
+    <button onclick="ChangeColor('green')">Green</button>
+    <button onclick="ChangeColor('blue')">Blue</button>
+    <button onclick="ChangeColor('red')">Red</button>
+    <button onclick="RandomColor()" id='random'>Random</button>
     <script src="script.js"></script>
 </body>
 </html>
